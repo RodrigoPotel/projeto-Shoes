@@ -21,6 +21,11 @@ body > header {
   max-height: 100px;
   flex-shrink: 1;
   box-shadow: 0 1px 8px -4px black;
+  margin-top: 5rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 body > header img {
@@ -102,6 +107,7 @@ button[type="reset"] {
   padding: .3rem;
   background-color: #777777;
   color: white;
+  transition: all 0.5s;
 }
 
 button[type="submit"] {
@@ -116,6 +122,26 @@ main > aside {
   font-size: 0.9rem;
   text-align: justify;
   padding: 0 4rem 4rem 4rem;
+}
+
+main > a img:hover {
+  transform: translateY(-1rem) scale(1.5);
+}
+
+main > aside img {
+  display: none;
+}
+
+main > a img {
+  display: block;
+  width: 5.5rem;
+  position: fixed;
+  right: 1rem;
+  /* left: ;
+  top: ; */
+  bottom: 1rem;
+  z-index: 30;
+  transition: 0.5s;
 }
 
 body > footer {
@@ -186,5 +212,33 @@ body > footer .column img {
     max-height: 43rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    border: .5rem solid #c2175b;
+    position: relative;
+    right: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+    top: 0rem;
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);;}
+    50% {filter: brightness(150%); filter: blur(0rem);}
+    100% {transform: rotate(360deg) translateX(5rem);}
+  }
+
+  main > aside img {
+    /* animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: */
+    animation: rotate 1s linear 0s 3 normal backwards;
+    display: block;
+    width: 6rem;
+    position: absolute;
+    left: -4rem;
+    top: -4rem;
   }
 }
