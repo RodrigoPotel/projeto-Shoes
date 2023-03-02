@@ -1,6 +1,6 @@
 # Projeto Shoes
 
-Após 1 mês em sala de aula, na edTech: Digital House, o Projeto Shoes foi proposto como um exercício, exercitando:
+Após 1 mês em sala de aula, na edTech: Digital House, o Projeto Shoes foi proposto como um exercício, com as stacks:
 
 ### - HTML
 ### - CSS
